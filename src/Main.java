@@ -12,11 +12,11 @@ public class Main {
 
         if(givenString.contains(" ")) {
             String[] split = givenString.split(" ");
-            String newString  ="";
+            StringBuilder newString  = new StringBuilder();
             for(int i = split.length-1; i>=0; i--){
-                newString += split[i]+" ";
+                newString.append(split[i]).append(" ");
             }
-            return newString;
+            return newString.toString();
 
         }else{
             return givenString;
